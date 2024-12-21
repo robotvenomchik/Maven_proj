@@ -12,7 +12,7 @@ public class Main {
         System.out.println("All presidents:");
         employeeDAO.viewAllEmployees();
 
-        employeeDAO.updateEmployee(1, "kamala Harris", 42, "democrat", 10000);
+        employeeDAO.updateEmployee(3, "kamala Harris", 42, "democrat", 10000);
 
         System.out.println("After update:");
         employeeDAO.viewAllEmployees();
