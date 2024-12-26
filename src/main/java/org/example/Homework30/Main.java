@@ -34,27 +34,21 @@ public class Main {
         homework2.setMark(90);
         homework2.setStudent(student1);
 
+        student2.addHomework(homework1);
         student1.addHomework(homework2);
         studentDao.update(student1);
-
-
 
         List<Student> students = studentDao.findAll();
         System.out.println("All Students:");
         students.forEach(System.out::println);
 
 
-
         Student retrievedStudent = studentDao.findByEmail("petlura221.symon@unr.com");
         System.out.println("Retrieved Student:");
         System.out.println(retrievedStudent);
 
-
-
         retrievedStudent.setLastName("UpdatedLastName");
         studentDao.update(retrievedStudent);
-
-
 
         Student updatedStudent = studentDao.findById(retrievedStudent.getId());
         System.out.println("Updated Student:");
