@@ -9,11 +9,9 @@ public class StudentDao implements GenericDao<Student, Long> {
 
 
     private EntityManagerFactory emf;
-    private EntityManager entityManager;
 
     public StudentDao() {
         this.emf = Persistence.createEntityManagerFactory("hillel-persistence-unit");
-        this.entityManager = emf.createEntityManager();
     }
     @Override
     public void save(Student entity) {
