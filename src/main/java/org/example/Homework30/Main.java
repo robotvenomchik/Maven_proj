@@ -1,6 +1,5 @@
 package org.example.Homework30;
 
-import org.hibernate.Session;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -18,8 +17,8 @@ public class Main {
         student2.setLastName("Pig");
         student2.setEmail("pepa_pig221@hrushka.com");
 
-        studentDao.addStudent(student1);
-        studentDao.addStudent(student2);
+        studentDao.save(student1);
+        studentDao.save(student2);
 
 
 
@@ -35,47 +34,46 @@ public class Main {
         homework2.setMark(90);
         homework2.setStudent(student1);
 
-        student1.addHomework(homework1);
         student1.addHomework(homework2);
-        studentDao.updateStudent(student1);
+        studentDao.update(student1);
 
 
 
-        List<Student> students = studentDao.getAllStudents();
+        List<Student> students = studentDao.findAll();
         System.out.println("All Students:");
         students.forEach(System.out::println);
 
 
 
-        Student retrievedStudent = studentDao.getStudentByEmail("petlura221.symon@unr.com");
+        Student retrievedStudent = studentDao.findByEmail("petlura221.symon@unr.com");
         System.out.println("Retrieved Student:");
         System.out.println(retrievedStudent);
 
 
 
         retrievedStudent.setLastName("UpdatedLastName");
-        studentDao.updateStudent(retrievedStudent);
+        studentDao.update(retrievedStudent);
 
 
 
-        Student updatedStudent = studentDao.getStudentById(retrievedStudent.getId());
+        Student updatedStudent = studentDao.findById(retrievedStudent.getId());
         System.out.println("Updated Student:");
         System.out.println(updatedStudent);
 
 
 
-        boolean isDeleted = studentDao.deleteStudent(student2.getId());
+        boolean isDeleted = studentDao.deleteById(student2.getId());
         System.out.println("Deleted Student with ID " + student2.getId() + ": " + isDeleted);
 
 
 
-        List<Student> remainingStudents = studentDao.getAllStudents();
+        List<Student> remainingStudents = studentDao.findAll();
         System.out.println("Remaining Students:");
         remainingStudents.forEach(System.out::println);
 
 
 
-        studentDao.deleteStudent(student1.getId());
+        studentDao.deleteById(student1.getId());
     }
 }
 

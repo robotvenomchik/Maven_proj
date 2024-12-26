@@ -1,78 +1,79 @@
 package org.example.Homework30;
 
+
 import jakarta.persistence.*;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import java.util.List;
-import java.util.Optional;
 
-public class StudentDao {
+public class StudentDao implements GenericDao<Student, Long> {
 
-    public void addStudent(Student student) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            try {
-                session.save(student);
-                transaction.commit();
-            } catch (Exception e) {
-                transaction.rollback();
-                throw e;
-            }
-        }
+
+    private EntityManagerFactory emf;
+    private EntityManager entityManager;
+
+    public StudentDao() {
+        this.emf = Persistence.createEntityManagerFactory("hillel-persistence-unit");
+        this.entityManager = emf.createEntityManager();
+    }
+    @Override
+    public void save(Student entity) {
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        em.persist(entity);
+        em.getTransaction().commit();
+        em.close();
     }
 
-    public List<Student> getAllStudents() {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Query<Student> query = session.createQuery("from Student", Student.class);
-            return query.list();
-        }
+    @Override
+    public Student findById(Long id) {
+        EntityManager em = emf.createEntityManager();
+        Student student = em.find(Student.class, id);
+        em.close();
+        return student;
     }
 
-    public Student getStudentByEmail(String email) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Query<Student> query = session.createQuery("from Student where email = :email", Student.class);
-            query.setParameter("email", email);
-            return query.uniqueResult();
-        }
-    }
-    public Student getStudentById(Long id) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Query<Student> query = session.createQuery("from Student where id = :id", Student.class);
-            query.setParameter("id", id);
-            return query.uniqueResult();
-        }
+    @Override
+    public Student findByEmail(String email) {
+        EntityManager em = emf.createEntityManager();
+        TypedQuery<Student> query = em.createQuery("SELECT s FROM Student s WHERE s.email = :email", Student.class);
+        query.setParameter("email", email);
+        Student student = query.getSingleResult();
+        em.close();
+        return student;
     }
 
-
-    public void updateStudent(Student student) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            try {
-                session.update(student);
-                transaction.commit();
-            } catch (Exception e) {
-                transaction.rollback();
-                throw e;
-            }
-        }
+    @Override
+    public List<Student> findAll() {
+        EntityManager em = emf.createEntityManager();
+        TypedQuery<Student> query = em.createQuery("SELECT s FROM Student s", Student.class);
+        List<Student> students = query.getResultList();
+        em.close();
+        return students;
     }
 
-    public boolean deleteStudent(Long id) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
-            try {
-                Student student = session.get(Student.class, id);
-                if (student != null) {
-                    session.delete(student);
-                }
-                transaction.commit();
-            } catch (Exception e) {
-                transaction.rollback();
-                throw e;
-            }
+    @Override
+    public Student update(Student entity) {
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Student updatedStudent = em.merge(entity);
+        em.getTransaction().commit();
+        em.close();
+        return updatedStudent;
+    }
+
+    @Override
+    public boolean deleteById(Long id) {
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Student student = em.find(Student.class, id);
+        if (student != null) {
+            em.remove(student);
+            em.getTransaction().commit();
+            em.close();
+            return true;
         }
-        return true;
+        em.close();
+        return false;
     }
 }
+
