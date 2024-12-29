@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework30_1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework31/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework31/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework31/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Homework30/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework30/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +48,8 @@
     "Application.Main.executor": "Run",
     "Application.PasswordClient.executor": "Run",
     "Application.PasswordGenerator.executor": "Run",
+    "JUnit.LibraryTest.executor": "Run",
+    "JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "homework__resolving",
@@ -57,8 +65,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Кирило\IdeaProjects\MavenKL\src\main\resources\META-INF" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LibraryTest.testAddBookWithNullIBN">
     <configuration name="PasswordClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Homework23.PasswordClient" />
       <module name="MavenKL" />
@@ -72,8 +83,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testAddBookWithDuplicateIBN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenKL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Homework31.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Homework31" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Homework31.LibraryTest" />
+      <option name="METHOD_NAME" value="testAddBookWithDuplicateIBN" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.testAddBookWithNullIBN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenKL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Homework31.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Homework31" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Homework31.LibraryTest" />
+      <option name="METHOD_NAME" value="testAddBookWithNullIBN" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.testRemoveBookByIbnWhenNoSuchBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MavenKL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Homework31.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Homework31" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Homework31.LibraryTest" />
+      <option name="METHOD_NAME" value="testRemoveBookByIbnWhenNoSuchBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testAddBookWithNullIBN" />
+        <item itemvalue="JUnit.LibraryTest.testAddBookWithDuplicateIBN" />
+        <item itemvalue="JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook" />
         <item itemvalue="Application.PasswordClient" />
       </list>
     </recent_temporary>
@@ -135,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735243080133</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Homework30_1">
+      <option name="closed" value="true" />
+      <created>1735243450006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735243450006</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Homework30_1">
+      <option name="closed" value="true" />
+      <created>1735243509777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735243509777</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

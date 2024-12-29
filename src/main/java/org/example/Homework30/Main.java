@@ -26,7 +26,7 @@ public class Main {
         homework1.setDescription("send to your teacher");
         homework1.setDeadline(LocalDate.now().plusDays(5));
         homework1.setMark(85);
-        homework1.setStudent(student1);
+        homework1.setStudent(student2);
 
         Homework homework2 = new Homework();
         homework2.setDescription("Java project");
@@ -37,6 +37,7 @@ public class Main {
         student2.addHomework(homework1);
         student1.addHomework(homework2);
         studentDao.update(student1);
+        studentDao.update(student2);
 
         List<Student> students = studentDao.findAll();
         System.out.println("All Students:");
