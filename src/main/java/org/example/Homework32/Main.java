@@ -15,15 +15,13 @@ public class Main {
 
         board.deliver(3);
 
-        board.deliver(100);
+        board.deliver(999);
+
+        board.add("Colleen Hoover");
 
         board.draw();
 
-        board.deliver();
-        board.deliver();
-        board.deliver();
-
-        board.draw();
+        board.close();
     }
 }
 
