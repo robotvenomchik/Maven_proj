@@ -1,0 +1,31 @@
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Added new order: 1 | Alen
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after adding: 1
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for add(): 35 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Added new order: 2 | Yoda
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after adding: 2
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for add(): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Added new order: 3 | Obi-van
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after adding: 3
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for add(): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Added new order: 4 | John Snow
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after adding: 4
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for add(): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Drawing current orders in queue:
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Delivered order: 1 | Alen
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after delivery: 3
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Delivered specific order: 3 | Obi-van
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after delivery: 2
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(int): 0 ms
+2025-01-07 20:52:20 [main] WARN  org.example.Homework32.CoffeeOrderBoard - Order with number 100 not found!
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(int): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Drawing current orders in queue:
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Delivered order: 2 | Yoda
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after delivery: 1
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(): 1 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Delivered order: 4 | John Snow
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Queue size after delivery: 0
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(): 2 ms
+2025-01-07 20:52:20 [main] WARN  org.example.Homework32.CoffeeOrderBoard - No orders to deliver!
+2025-01-07 20:52:20 [main] DEBUG org.example.Homework32.CoffeeOrderBoard - Execution time for deliver(): 0 ms
+2025-01-07 20:52:20 [main] INFO  org.example.Homework32.CoffeeOrderBoard - Drawing current orders in queue:
