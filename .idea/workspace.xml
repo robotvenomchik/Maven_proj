@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework31">
+    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework32_hard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/coffee_order_board.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/coffee_order_board.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Homework32/CoffeeOrderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework32/CoffeeOrderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Homework32/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework32/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Homework32/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework32/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,26 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PasswordClient.executor": "Run",
-    "Application.PasswordGenerator.executor": "Run",
-    "JUnit.LibraryTest.executor": "Run",
-    "JUnit.LibraryTest.testAddBookWithDuplicateIBN.executor": "Run",
-    "JUnit.LibraryTest.testAddBookWithNullIBN.executor": "Run",
-    "JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "homework32__hard",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Кирило/IdeaProjects/MavenKL/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testAddBookWithDuplicateIBN.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testAddBookWithNullIBN.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework32__hard&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Кирило/IdeaProjects/MavenKL/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Кирило\IdeaProjects\MavenKL\src\main\resources\META-INF" />
@@ -234,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735478487303</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Homework32_hard">
+      <option name="closed" value="true" />
+      <created>1736277945478</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736277945479</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +263,8 @@
     <MESSAGE value="Homework30" />
     <MESSAGE value="Homework30_1" />
     <MESSAGE value="Homework31" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework31" />
+    <MESSAGE value="Homework32_hard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework32_hard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
