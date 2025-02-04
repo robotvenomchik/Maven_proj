@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <script>
+        const apiUrl = "http://localhost:8080/orders";
+
+        function createOrder() {
+            const order = {
+                date: new Date().toISOString(),
+                cost: parseFloat(document.getElementById("orderCost").value),
+                products: [{
+                    id: 1,
+                    name: document.getElementById("productName").value,
+                    cost: parseFloat(document.getElementById("productCost").value)
+                }]
+            };
+            fetch(apiUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(order)
+            }).then(response => response.json())
+              .then(data => alert("Замовлення створено: " + JSON.stringify(data)));
+        }
+
+        function getOrder() {
+            const orderId = document.getElementById("orderId").value;
+            fetch(`${apiUrl}?id=${orderId}`)
+                .then(response => response.json())
+                .then(data => document.getElementById("orderDetails").innerText = JSON.stringify(data, null, 2));
+        }
+
+        function deleteOrder() {
+            const orderId = document.getElementById("orderId").value;
+            fetch(`${apiUrl}?id=${orderId}`, { method: "DELETE" })
+                .then(() => alert("Замовлення видалено"));
+        }
+    </script>
+</head>
+<body>
+    <h2>Order Management</h2>
+    <h3>Створити замовлення</h3>
+    <label>Ціна замовлення:</label>
+    <input type="number" id="orderCost"><br>
+    <label>Назва продукту:</label>
+    <input type="text" id="productName"><br>
+    <label>Ціна продукту:</label>
+    <input type="number" id="productCost"><br>
+    <button onclick="createOrder()">Створити</button>
+
+    <h3>Отримати замовлення</h3>
+    <label>ID замовлення:</label>
+    <input type="number" id="orderId"><br>
+    <button onclick="getOrder()">Отримати</button>
+    <pre id="orderDetails"></pre>
+
+    <h3>Видалити замовлення</h3>
+    <button onclick="deleteOrder()">Видалити</button>
+</body>
+</html>
