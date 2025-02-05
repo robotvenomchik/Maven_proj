@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework30_1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/OrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework37/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/CartConsoleApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/ShoppingCartApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework38/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework38_new_func">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Homework23/PasswordClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework23/PasswordClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,29 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PasswordClient.executor": "Run",
-    "Application.PasswordGenerator.executor": "Run",
-    "Application.ShoppingCartApp.executor": "Run",
-    "JUnit.LibraryTest.executor": "Run",
-    "JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook.executor": "Run",
-    "Maven.MavenKL [clean].executor": "Run",
-    "Maven.MavenKL [deploy].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Кирило/IdeaProjects/MavenKL/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PasswordGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShoppingCartApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryTest.testRemoveBookByIbnWhenNoSuchBook.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MavenKL [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MavenKL [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Кирило/IdeaProjects/MavenKL/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Кирило\IdeaProjects\MavenKL\src\main\resources\META-INF" />
@@ -259,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735243509777</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Homework38_new_func">
+      <option name="closed" value="true" />
+      <created>1738701233453</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738701233453</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +270,8 @@
     <MESSAGE value="JDBC" />
     <MESSAGE value="Homework30" />
     <MESSAGE value="Homework30_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework30_1" />
+    <MESSAGE value="Homework38_new_func" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework38_new_func" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

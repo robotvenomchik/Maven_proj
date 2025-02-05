@@ -43,7 +43,7 @@ public class CartConsoleApp implements CommandLineRunner {
                     if (cartService.addProductById(addId)) {
                         System.out.println("Товар додано!");
                     } else {
-                        System.out.println("Товар не знайдено.");
+                        System.out.println("Товар не знайдено");
                     }
                     break;
                 case 3:
@@ -52,7 +52,7 @@ public class CartConsoleApp implements CommandLineRunner {
                     if (cartService.removeProductById(removeId)) {
                         System.out.println("Товар видалено!");
                     } else {
-                        System.out.println("Товар не знайдено в кошику.");
+                        System.out.println("Товар не знайдено в кошику");
                     }
                     break;
                 case 4:
@@ -67,7 +67,7 @@ public class CartConsoleApp implements CommandLineRunner {
                     scanner.close();
                     return;
                 default:
-                    System.out.println("Невірна опція, спробуйте ще раз.");
+                    System.out.println("Невірна опція, спробуйте ще раз");
             }
         }
     }
