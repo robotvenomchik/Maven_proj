@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework38_new_func">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework39/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework39/CustomerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework39/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework39/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework39/CustomerRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="7d56c253-16e6-4bc4-a492-227cde0e493e" name="Changes" comment="Homework39">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/controller/PingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Homework40/repository/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CustomerApplication.executor": "Run",
+    "Application.DemoApplication.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PasswordClient.executor": "Run",
     "Application.PasswordGenerator.executor": "Run",
@@ -258,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738701233453</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Homework39">
+      <option name="closed" value="true" />
+      <created>1739133835285</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739133835285</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +287,8 @@
     <MESSAGE value="Homework30" />
     <MESSAGE value="Homework30_1" />
     <MESSAGE value="Homework38_new_func" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework38_new_func" />
+    <MESSAGE value="Homework39" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homework39" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
